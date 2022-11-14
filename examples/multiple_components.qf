@@ -1,0 +1,28 @@
+Vertical{
+    Button{
+        "arg1",
+        "Exit",
+        Animated
+    }
+    Slider{
+        "arg2",
+        50,
+        0,
+        100,
+        1
+    }
+    Horizontal{
+        Button{
+            "arg3",
+            "Exit",
+            Ascii
+        }
+        Slider{
+            "arg4",
+            35, 
+            0,
+            100,
+            5
+        }
+    }
+}
