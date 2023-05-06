@@ -87,28 +87,6 @@ TEST_CASE("Parse Multiple Components in any order") {
     REQUIRE(parse_helper("Horizontal{\
         Slider{\"amool\" , 20 , 1 , 100 , 1}  \
         Button{\"amool\" , \"bmpp\", Animated}  \
-        }")); 
-
-    REQUIRE(parse_helper("Vertical{\
-        Slider{\"amool\" , 20, 1, 100, 1}  \
-        Button{\"amool\" , \"bmpp\", Animated}  \
-        }")); 
-    REQUIRE(parse_helper("Vertical{\
-        Slider{\"amool\" , 20, 1, 100, 1}  \
-        Button{\"amool\" , \"bmpp\", Animated}  \
-        Menu{[\"Physics\"  \"Maths\"  \"Chemistry\"  \"Biology\"], 0}  \
-        }"));
-    REQUIRE(parse_helper("Vertical{\
-        Slider{\"amool\" , 20, 1, 100, 1}  \
-        Button{\"amool\" , \"bmpp\"}  \
-        Menu{[\"Physics\"  \"Maths\"  \"Chemistry\"  \"Biology\"], 0}  \
-        }"));
-}
-
-TEST_CASE("Parse Multiple Components in any order") {
-    REQUIRE(parse_helper("Horizontal{\
-        Slider{\"amool\" , 20 , 1 , 100 , 1}  \
-        Button{\"amool\" , \"bmpp\", Animated}  \
         }"));
 
     REQUIRE(parse_helper("Vertical{\
